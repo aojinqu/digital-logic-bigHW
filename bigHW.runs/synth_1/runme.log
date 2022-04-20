@@ -1,0 +1,767 @@
+
+*** Running vivado
+    with args -log bigHW.vds -m64 -mode batch -messageDb vivado.pb -notrace -source bigHW.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source bigHW.tcl -notrace
+Command: synth_design -top bigHW -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21056 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 306.016 ; gain = 99.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bigHW' [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:3]
+INFO: [Synth 8-638] synthesizing module 'mp3' [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:2]
+	Parameter CMD_START bound to: 0 - type: integer 
+	Parameter WRITE_CMD bound to: 1 - type: integer 
+	Parameter DATA_START bound to: 2 - type: integer 
+	Parameter WRITE_DATA bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Divider' [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+	Parameter N bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider' (1#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-22688-LAPTOP-524UIDDT/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (2#1) [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-22688-LAPTOP-524UIDDT/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (11) of module 'blk_mem_gen_1' [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:25]
+WARNING: [Synth 8-350] instance 'flower_dance' of module 'blk_mem_gen_1' requires 5 connections, but only 4 given [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:25]
+INFO: [Synth 8-256] done synthesizing module 'mp3' (3#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:2]
+INFO: [Synth 8-638] synthesizing module 'vga_control' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:4]
+	Parameter C_H_SYNC_PULSE bound to: 96 - type: integer 
+	Parameter C_H_BACK_PORCH bound to: 48 - type: integer 
+	Parameter C_H_ACTIVE_TIME bound to: 640 - type: integer 
+	Parameter C_H_FRONT_PORCH bound to: 16 - type: integer 
+	Parameter C_H_LINE_PERIOD bound to: 800 - type: integer 
+	Parameter C_V_SYNC_PULSE bound to: 2 - type: integer 
+	Parameter C_V_BACK_PORCH bound to: 33 - type: integer 
+	Parameter C_V_ACTIVE_TIME bound to: 480 - type: integer 
+	Parameter C_V_FRONT_PORCH bound to: 10 - type: integer 
+	Parameter C_V_FRAME_PERIOD bound to: 525 - type: integer 
+	Parameter C_IMAGE_WIDTH bound to: 640 - type: integer 
+	Parameter C_IMAGE_HEIGHT bound to: 480 - type: integer 
+	Parameter C_IMAGE_PIX_NUM bound to: 307200 - type: integer 
+	Parameter BAR_WIDTH bound to: 95 - type: integer 
+	Parameter BAR_HEIGHT bound to: 60 - type: integer 
+	Parameter x0 bound to: 70 - type: integer 
+	Parameter y0 bound to: 50 - type: integer 
+	Parameter xmax bound to: 430 - type: integer 
+	Parameter ymax bound to: 430 - type: integer 
+	Parameter ybegin bound to: 350 - type: integer 
+	Parameter x1 bound to: 320 - type: integer 
+	Parameter y1 bound to: 50 - type: integer 
+	Parameter x2 bound to: 195 - type: integer 
+	Parameter y2 bound to: 50 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Divider__parameterized0' [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider__parameterized0' (3#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'Divider__parameterized1' [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+	Parameter N bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider__parameterized1' (3#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-22688-LAPTOP-524UIDDT/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (4#1) [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-22688-LAPTOP-524UIDDT/realtime/blk_mem_gen_2_stub.v:6]
+WARNING: [Synth 8-689] width (24) of port connection 'addra' does not match port width (19) of module 'blk_mem_gen_2' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:72]
+WARNING: [Synth 8-350] instance 'background' of module 'blk_mem_gen_2' requires 5 connections, but only 4 given [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:72]
+WARNING: [Synth 8-5788] Register O_red_reg in module vga_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:185]
+WARNING: [Synth 8-5788] Register O_green_reg in module vga_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:186]
+WARNING: [Synth 8-5788] Register O_blue_reg in module vga_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:187]
+INFO: [Synth 8-256] done synthesizing module 'vga_control' (5#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:4]
+INFO: [Synth 8-638] synthesizing module 'bluetooth' [D:/users/bigHW/bigHW.srcs/sources_1/new/bluetooth.v:1]
+	Parameter bps bound to: 10417 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bluetooth' (6#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/bluetooth.v:1]
+INFO: [Synth 8-638] synthesizing module 'display7' [D:/users/bigHW/bigHW.srcs/sources_1/new/dislplay7.v:4]
+INFO: [Synth 8-638] synthesizing module 'Divider__parameterized2' [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+	Parameter N bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider__parameterized2' (6#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+INFO: [Synth 8-256] done synthesizing module 'display7' (7#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/dislplay7.v:4]
+WARNING: [Synth 8-3848] Net score in module/entity bigHW does not have driver. [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:29]
+INFO: [Synth 8-256] done synthesizing module 'bigHW' (8#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:3]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[11]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[10]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[9]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[8]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[7]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[6]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[5]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[4]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[3]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[2]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[1]
+WARNING: [Synth 8-3331] design display7 has unconnected port score[0]
+WARNING: [Synth 8-3331] design display7 has unconnected port level[3]
+WARNING: [Synth 8-3331] design display7 has unconnected port level[2]
+WARNING: [Synth 8-3331] design display7 has unconnected port level[1]
+WARNING: [Synth 8-3331] design display7 has unconnected port level[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 343.414 ; gain = 136.754
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 343.414 ; gain = 136.754
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_1' instantiated as 'Mp3/flower_dance' [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:25]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_2' instantiated as 'VGA/background' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:72]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-22688-LAPTOP-524UIDDT/dcp_2/blk_mem_gen_1_in_context.xdc] for cell 'Mp3/flower_dance'
+Finished Parsing XDC File [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-22688-LAPTOP-524UIDDT/dcp_2/blk_mem_gen_1_in_context.xdc] for cell 'Mp3/flower_dance'
+Parsing XDC File [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-22688-LAPTOP-524UIDDT/dcp_3/blk_mem_gen_2_in_context.xdc] for cell 'VGA/background'
+Finished Parsing XDC File [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-22688-LAPTOP-524UIDDT/dcp_3/blk_mem_gen_2_in_context.xdc] for cell 'VGA/background'
+Parsing XDC File [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]
+Finished Parsing XDC File [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bigHW_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bigHW_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 645.898 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 645.898 ; gain = 439.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 645.898 ; gain = 439.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 645.898 ; gain = 439.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'mp3'
+INFO: [Synth 8-5544] ROM "status" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "R_v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RST_move" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "R_v_pos" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_v_pos_2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "R_v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RST_move" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "R_v_pos" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_v_pos_2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CMD_START |                               00 | 00000000000000000000000000000000
+              DATA_START |                               01 | 00000000000000000000000000000010
+              WRITE_DATA |                               10 | 00000000000000000000000000000011
+               WRITE_CMD |                               11 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'status_reg' using encoding 'sequential' in module 'mp3'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 645.898 ; gain = 439.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 6     
+	   2 Input     13 Bit       Adders := 10    
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	  10 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 15    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mp3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 14    
+Module Divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Divider__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 6     
+	   2 Input     13 Bit       Adders := 10    
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module bluetooth 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Divider__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module display7 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	  10 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 645.898 ; gain = 439.238
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "R_v_pos" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "CLKDIV1/i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CLKDIV1/O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CLKDIV2/i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CLKDIV2/O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "R_v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RST_move" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Mp3/CLKDIV1/i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mp3/CLKDIV1/O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "VGA/CLKDIV1/i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "VGA/CLKDIV1/O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "VGA/R_v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VGA/RST_move" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "VGA/CLKDIV2/i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "VGA/CLKDIV2/O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dp7/CLKDIV5/i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dp7/CLKDIV5/O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design bigHW has port RSET driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 645.898 ; gain = 439.238
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 645.898 ; gain = 439.238
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\VGA/R_state_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (VGA/RST_move_reg) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/RST_move_reg__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/RST_move_reg__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:162]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:162]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:162]
+WARNING: [Synth 8-3332] Sequential element (VGA/RST_move_reg__2) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[3]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[2]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[1]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[0]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[3]__0) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[2]__0) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[1]__0) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[0]__0) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[3]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[2]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[1]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/score_reg[0]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[12]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[11]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[10]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[9]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[8]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[7]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[6]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[5]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[4]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[3]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[2]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[1]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[0]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[12]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[12]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[11]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[11]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[10]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[10]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[9]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[9]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[8]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[8]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[7]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[7]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[6]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[6]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[5]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[5]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[4]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[4]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[3]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[3]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[2]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[2]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[1]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[1]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[0]__0) is unused and will be removed from module bigHW.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'VGA/tmp_reg[0]__0/Q' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:163]
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[12]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[11]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[10]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[9]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[8]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[7]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[6]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[5]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[4]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[3]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[2]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[1]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/tmp_reg[0]__1) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/G_press_reg) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/G_press_reg__0) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/B_press_reg) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/B_press_reg__0) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/R_press_reg) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/R_press_reg__0) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/addrr_reg[11]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/addrr_reg[12]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/addrr_reg[13]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/addrr_reg[14]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/addrr_reg[15]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/addrr_reg[16]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/R_state_reg[1]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/R_v_pos_3_reg[0]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (bt/out_reg[7]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (bt/out_reg[6]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (bt/out_reg[5]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (bt/out_reg[4]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[31]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[30]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[29]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[28]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[27]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[26]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[25]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[24]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[23]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[22]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[21]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[20]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[19]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[18]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[17]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[16]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[15]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[14]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[13]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[12]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[11]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[10]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[9]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[8]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[7]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[6]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[5]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (VGA/CLKDIV2/i_reg[4]) is unused and will be removed from module bigHW.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'i_5/VGA/R_h_pos_reg[10]' (FDCE) to 'i_5/VGA/R_h_pos_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_5/\VGA/R_h_pos_reg[11] )
+INFO: [Synth 8-3886] merging instance 'i_5/VGA/R_h_pos_2_reg[10]' (FDCE) to 'i_5/VGA/R_h_pos_2_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_5/\VGA/R_h_pos_2_reg[11] )
+INFO: [Synth 8-3886] merging instance 'i_5/VGA/R_h_pos_3_reg[10]' (FDCE) to 'i_5/VGA/R_h_pos_3_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_5/\VGA/R_h_pos_3_reg[11] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 645.898 ; gain = 439.238
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 645.898 ; gain = 439.238
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 645.898 ; gain = 439.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 645.898 ; gain = 439.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 649.770 ; gain = 443.109
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 649.770 ; gain = 443.109
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 649.770 ; gain = 443.109
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \VGA/background  has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 649.770 ; gain = 443.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 649.770 ; gain = 443.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 649.770 ; gain = 443.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 649.770 ; gain = 443.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 649.770 ; gain = 443.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 649.770 ; gain = 443.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|bigHW       | Mp3/cmd_mode_reg[127] | 128    | 1     | NO           | NO                 | YES               | 0      | 4       | 
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_1 |         1|
+|2     |blk_mem_gen_2 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_1 |     1|
+|2     |blk_mem_gen_2 |     1|
+|3     |BUFG          |     3|
+|4     |CARRY4        |   157|
+|5     |LUT1          |   399|
+|6     |LUT2          |   134|
+|7     |LUT3          |    84|
+|8     |LUT4          |   194|
+|9     |LUT5          |   101|
+|10    |LUT6          |    55|
+|11    |SRLC32E       |     4|
+|12    |FDCE          |   100|
+|13    |FDPE          |    18|
+|14    |FDRE          |   276|
+|15    |FDSE          |     3|
+|16    |IBUF          |     4|
+|17    |OBUF          |    26|
++------+--------------+------+
+
+Report Instance Areas: 
++------+------------+------------------------+------+
+|      |Instance    |Module                  |Cells |
++------+------------+------------------------+------+
+|1     |top         |                        |  1602|
+|2     |  Mp3       |mp3                     |   475|
+|3     |    CLKDIV1 |Divider                 |    83|
+|4     |  VGA       |vga_control             |   858|
+|5     |    CLKDIV1 |Divider__parameterized0 |    83|
+|6     |  bt        |bluetooth               |    83|
+|7     |  dp7       |display7                |   153|
+|8     |    CLKDIV5 |Divider__parameterized2 |    83|
++------+------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 649.770 ; gain = 443.109
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 86 critical warnings and 112 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 649.770 ; gain = 111.254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 649.770 ; gain = 443.109
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 161 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 127 Warnings, 86 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 649.770 ; gain = 418.805
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.024 . Memory (MB): peak = 649.770 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 09 00:00:32 2022...

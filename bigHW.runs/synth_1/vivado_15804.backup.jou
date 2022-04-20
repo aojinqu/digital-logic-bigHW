@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Jan 05 21:53:55 2022
+# Process ID: 15804
+# Current directory: D:/users/bigHW/bigHW.runs/synth_1
+# Command line: vivado.exe -log vga_control.vds -mode batch -messageDb vivado.pb -notrace -source vga_control.tcl
+# Log file: D:/users/bigHW/bigHW.runs/synth_1/vga_control.vds
+# Journal file: D:/users/bigHW/bigHW.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_control.tcl -notrace

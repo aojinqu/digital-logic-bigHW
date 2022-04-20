@@ -1,0 +1,53 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.ip_user_files/ipstatic/blk_mem_gen_v8_3_3/simulation/blk_mem_gen_v8_3.v" into library blk_mem_gen_v8_3_3
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_3
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_3
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_3_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_3_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_3_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.srcs/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.srcs/sources_1/new/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.srcs/sources_1/new/dislplay7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display7
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [D:/users/bigHW/bigHW.srcs/sources_1/new/dislplay7.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bigHW
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.srcs/sources_1/new/bluetooth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bluetooth
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mp3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.srcs/sim_1/new/bigHW_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bigHW_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/users/bigHW/bigHW.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_VCOMP.vhd" into library xpm

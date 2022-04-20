@@ -1,0 +1,89 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sun Jan 09 00:01:39 2022
+| Host         : LAPTOP-524UIDDT running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bigHW_control_sets_placed.rpt
+| Design       : bigHW
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    36 |
+| Unused register locations in slices containing registers |   143 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             113 |           86 |
+| No           | No                    | Yes                    |              15 |            5 |
+| No           | Yes                   | No                     |              94 |           25 |
+| Yes          | No                    | No                     |              83 |           28 |
+| Yes          | No                    | Yes                    |             103 |           29 |
+| Yes          | Yes                   | No                     |              89 |           29 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+----------------------------+-----------------------+------------------+----------------+
+|   Clock Signal   |        Enable Signal       |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
++------------------+----------------------------+-----------------------+------------------+----------------+
+|  dp7/CLKDIV5/CLK | dp7/oData[1]_i_2_n_0       | dp7/oData[1]_i_1_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG   | bt/p_1_in[3]               | VGA/R_h_cnt_reg[10]_0 |                1 |              1 |
+|  clk_1M          | Mp3/__3_n_0                |                       |                1 |              1 |
+|  CLK_IBUF_BUFG   |                            | VGA/R_h_cnt_reg[10]_0 |                1 |              1 |
+|  clk_1M          | Mp3/__9_n_0                |                       |                1 |              1 |
+|  clk_1M          | Mp3/__7_n_0                |                       |                1 |              1 |
+|  CLK_IBUF_BUFG   | bt/p_1_in[0]               | VGA/R_h_cnt_reg[10]_0 |                1 |              1 |
+|  CLK_IBUF_BUFG   | bt/p_1_in[1]               | VGA/R_h_cnt_reg[10]_0 |                1 |              1 |
+|  CLK_IBUF_BUFG   | bt/p_1_in[2]               | VGA/R_h_cnt_reg[10]_0 |                1 |              1 |
+|  dp7/CLKDIV5/CLK | dp7/oData[6]_i_2_n_0       | dp7/oData[6]_i_1_n_0  |                1 |              2 |
+|  dp7/CLKDIV5/CLK | dp7/oData[5]_i_2_n_0       | dp7/oData[5]_i_1_n_0  |                1 |              4 |
+|  clk_1M          |                            |                       |                3 |              4 |
+|  CLK_IBUF_BUFG   | bt/cn20                    | VGA/R_h_cnt_reg[10]_0 |                1 |              4 |
+|  CLK_IBUF_BUFG   | bt/iData_reg[0][0]         |                       |                1 |              4 |
+|  clk_1M          | Mp3/cmd_mode               |                       |                2 |              5 |
+|  R_clk_25M       | VGA/R_h_pos[0]_i_1_n_0     | VGA/R_h_cnt_reg[10]_0 |                3 |             10 |
+|  R_clk_25M       | VGA/R_h_pos_2[0]_i_1_n_0   | VGA/R_h_cnt_reg[10]_0 |                3 |             10 |
+|  R_clk_25M       | VGA/R_h_pos_3[0]_i_1_n_0   | VGA/R_h_cnt_reg[10]_0 |                3 |             10 |
+|  R_clk_25M       | VGA/R_v_pos_3[1]_i_1_n_0   | VGA/R_h_cnt_reg[10]_0 |                3 |             11 |
+|  clk_1M          | Mp3/addrr[0]_i_1_n_0       |                       |                3 |             11 |
+|  R_clk_25M       | VGA/R_v_cnt[11]_i_1_n_0    | VGA/R_h_cnt_reg[10]_0 |                5 |             12 |
+|  R_clk_25M       | VGA/R_v_pos_2[0]_i_1_n_0   | VGA/R_h_cnt_reg[10]_0 |                3 |             12 |
+|  R_clk_25M       | RST_n_IBUF                 | VGA/O_red[3]_i_1_n_0  |                4 |             12 |
+|  CLK_IBUF_BUFG   |                            |                       |                8 |             13 |
+|  R_clk_25M       | VGA/sel                    | VGA/R_h_cnt_reg[10]_0 |                4 |             14 |
+|  R_clk_25M       |                            | VGA/R_h_cnt_reg[10]_0 |                5 |             15 |
+|  CLK_IBUF_BUFG   | bt/ena_add                 | VGA/R_h_cnt_reg[10]_0 |                4 |             15 |
+|  CLK_IBUF_BUFG   | bt/E[0]                    | VGA/R_h_cnt_reg[10]_0 |                3 |             16 |
+|  R_clk_25M       | VGA/R_rom_addr[23]_i_1_n_0 | VGA/R_h_cnt_reg[10]_0 |                5 |             24 |
+|  CLK_IBUF_BUFG   |                            | dp7/CLKDIV5/O_CLK_1M  |                8 |             31 |
+|  CLK_IBUF_BUFG   |                            | Mp3/CLKDIV1/O_CLK_1M  |                8 |             31 |
+|  CLK_IBUF_BUFG   |                            | VGA/CLKDIV1/O_CLK_1M  |                8 |             31 |
+|  clk_1M          | Mp3/cnt                    | Mp3/cnt[31]_i_1_n_0   |               10 |             31 |
+|  clk_1M          | Mp3/cmd_cnt                |                       |                8 |             32 |
+|  clk_1M          | Mp3/tmp                    |                       |               12 |             32 |
+|  R_clk_25M       |                            |                       |               75 |             96 |
++------------------+----------------------------+-----------------------+------------------+----------------+
+
+

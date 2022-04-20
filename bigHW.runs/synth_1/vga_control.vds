@@ -1,0 +1,419 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Jan 05 21:53:55 2022
+# Process ID: 15804
+# Current directory: D:/users/bigHW/bigHW.runs/synth_1
+# Command line: vivado.exe -log vga_control.vds -mode batch -messageDb vivado.pb -notrace -source vga_control.tcl
+# Log file: D:/users/bigHW/bigHW.runs/synth_1/vga_control.vds
+# Journal file: D:/users/bigHW/bigHW.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_control.tcl -notrace
+Command: synth_design -top vga_control -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22308 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 306.398 ; gain = 99.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_control' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:58]
+	Parameter C_H_SYNC_PULSE bound to: 96 - type: integer 
+	Parameter C_H_BACK_PORCH bound to: 48 - type: integer 
+	Parameter C_H_ACTIVE_TIME bound to: 640 - type: integer 
+	Parameter C_H_FRONT_PORCH bound to: 16 - type: integer 
+	Parameter C_H_LINE_PERIOD bound to: 800 - type: integer 
+	Parameter C_V_SYNC_PULSE bound to: 2 - type: integer 
+	Parameter C_V_BACK_PORCH bound to: 33 - type: integer 
+	Parameter C_V_ACTIVE_TIME bound to: 480 - type: integer 
+	Parameter C_V_FRONT_PORCH bound to: 10 - type: integer 
+	Parameter C_V_FRAME_PERIOD bound to: 525 - type: integer 
+	Parameter C_IMAGE_WIDTH bound to: 640 - type: integer 
+	Parameter C_IMAGE_HEIGHT bound to: 480 - type: integer 
+	Parameter C_IMAGE_PIX_NUM bound to: 307200 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Divider' [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider' (1#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-15804-LAPTOP-524UIDDT/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (2#1) [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-15804-LAPTOP-524UIDDT/realtime/blk_mem_gen_2_stub.v:6]
+WARNING: [Synth 8-689] width (24) of port connection 'addra' does not match port width (19) of module 'blk_mem_gen_2' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:98]
+WARNING: [Synth 8-350] instance 'background' of module 'blk_mem_gen_2' requires 5 connections, but only 4 given [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:98]
+WARNING: [Synth 8-5788] Register O_red_reg in module vga_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:150]
+WARNING: [Synth 8-5788] Register O_green_reg in module vga_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:151]
+WARNING: [Synth 8-5788] Register O_blue_reg in module vga_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:152]
+INFO: [Synth 8-256] done synthesizing module 'vga_control' (3#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 343.746 ; gain = 136.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 343.746 ; gain = 136.914
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_2' instantiated as 'background' [D:/users/bigHW/bigHW.srcs/sources_1/new/vga_control.v:98]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-15804-LAPTOP-524UIDDT/dcp/blk_mem_gen_2_in_context.xdc] for cell 'background'
+Finished Parsing XDC File [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-15804-LAPTOP-524UIDDT/dcp/blk_mem_gen_2_in_context.xdc] for cell 'background'
+Parsing XDC File [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]
+WARNING: [Vivado 12-584] No ports matched 'DREQ'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'RSET'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'XCS'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'SCLK'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'SI'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'XDCS'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'RSET'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'SCLK'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'SI'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'XCS'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'XDCS'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'DREQ'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'O_BLUE[3]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'O_BLUE[2]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'O_BLUE[1]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'O_BLUE[0]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'O_GREEN[3]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'O_GREEN[2]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'O_GREEN[1]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'O_GREEN[0]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'O_RED[3]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'O_RED[2]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'O_RED[1]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'O_RED[0]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'O_RED[3]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'O_RED[2]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'O_RED[1]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'O_RED[0]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'O_GREEN[3]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'O_GREEN[2]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'O_GREEN[1]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'O_GREEN[0]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'O_BLUE[3]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'O_BLUE[2]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'O_BLUE[1]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'O_BLUE[0]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'O_HS'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'O_VS'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'RST_n'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'O_HS'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'O_VS'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'RST_n'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'usbCLK'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'usbDATA'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'display[0]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'display[0]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'display[1]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'display[1]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'display[2]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'display[2]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'display[3]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'display[3]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'display[4]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'display[4]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'display[5]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'display[5]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'display[6]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'display[6]'. [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc:71]
+Finished Parsing XDC File [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/vga_control_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_control_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_control_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 640.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "R_v_cnt" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+Module Divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "CLKDIV2/i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CLKDIV2/O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "R_v_cnt" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 640.125 ; gain = 433.293
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 640.125 ; gain = 433.293
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module background has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_2 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_2 |     1|
+|2     |BUFG          |     2|
+|3     |CARRY4        |    20|
+|4     |LUT1          |    79|
+|5     |LUT2          |    37|
+|6     |LUT3          |    15|
+|7     |LUT4          |    14|
+|8     |LUT5          |     8|
+|9     |LUT6          |    20|
+|10    |FDCE          |    48|
+|11    |FDRE          |    45|
+|12    |IBUF          |     2|
+|13    |OBUF          |    14|
++------+--------------+------+
+
+Report Instance Areas: 
++------+----------+--------+------+
+|      |Instance  |Module  |Cells |
++------+----------+--------+------+
+|1     |top       |        |   316|
+|2     |  CLKDIV2 |Divider |    83|
++------+----------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 640.125 ; gain = 108.504
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 640.125 ; gain = 433.293
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 65 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 640.125 ; gain = 408.219
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 640.125 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 05 21:54:23 2022...

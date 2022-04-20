@@ -1,0 +1,731 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Jan 01 19:33:57 2022
+# Process ID: 23504
+# Current directory: D:/users/bigHW/bigHW.runs/synth_1
+# Command line: vivado.exe -log bigHW.vds -mode batch -messageDb vivado.pb -notrace -source bigHW.tcl
+# Log file: D:/users/bigHW/bigHW.runs/synth_1/bigHW.vds
+# Journal file: D:/users/bigHW/bigHW.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source bigHW.tcl -notrace
+Command: synth_design -top bigHW -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4584 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 306.059 ; gain = 99.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bigHW' [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:4]
+INFO: [Synth 8-638] synthesizing module 'vol_control' [D:/users/bigHW/bigHW.srcs/sources_1/new/vol_control.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/users/bigHW/bigHW.srcs/sources_1/new/vol_control.v:13]
+INFO: [Synth 8-256] done synthesizing module 'vol_control' (1#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/vol_control.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'led' does not match port width (16) of module 'vol_control' [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:37]
+INFO: [Synth 8-638] synthesizing module 'mp3' [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:3]
+	Parameter CMD_PRE bound to: 0 - type: integer 
+	Parameter WRITE_CMD bound to: 1 - type: integer 
+	Parameter DATA_PRE bound to: 2 - type: integer 
+	Parameter WRITE_DATA bound to: 3 - type: integer 
+	Parameter DELAY bound to: 4 - type: integer 
+	Parameter VOL_PRE bound to: 5 - type: integer 
+	Parameter VOL_CHANGE bound to: 6 - type: integer 
+	Parameter PAUSE bound to: 7 - type: integer 
+	Parameter DELAY_TIME bound to: 500000 - type: integer 
+	Parameter CMD_NUM bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Divider' [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:4]
+	Parameter Time bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider' (2#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:4]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-23504-LAPTOP-524UIDDT/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (3#1) [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-23504-LAPTOP-524UIDDT/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (11) of module 'blk_mem_gen_1' [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:43]
+WARNING: [Synth 8-689] width (16) of port connection 'douta' does not match port width (32) of module 'blk_mem_gen_1' [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:43]
+WARNING: [Synth 8-350] instance 'flower_dance' of module 'blk_mem_gen_1' requires 5 connections, but only 4 given [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:43]
+INFO: [Synth 8-256] done synthesizing module 'mp3' (4#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'RSET' does not match port width (1) of module 'mp3' [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:49]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:49]
+INFO: [Synth 8-638] synthesizing module 'display7' [D:/users/bigHW/bigHW.srcs/sources_1/new/dislplay7.v:3]
+INFO: [Synth 8-638] synthesizing module 'Divider__parameterized0' [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:4]
+	Parameter Time bound to: 200000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider__parameterized0' (4#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:4]
+INFO: [Synth 8-256] done synthesizing module 'display7' (5#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/dislplay7.v:3]
+WARNING: [Synth 8-3848] Net RSET in module/entity bigHW does not have driver. [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:17]
+WARNING: [Synth 8-3848] Net Time in module/entity bigHW does not have driver. [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:31]
+WARNING: [Synth 8-3848] Net vol in module/entity bigHW does not have driver. [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:25]
+WARNING: [Synth 8-3848] Net current in module/entity bigHW does not have driver. [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:27]
+INFO: [Synth 8-256] done synthesizing module 'bigHW' (6#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:4]
+WARNING: [Synth 8-3331] design bigHW has unconnected port RSET
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 343.344 ; gain = 136.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[15] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[14] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[13] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[12] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[11] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[10] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[9] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[8] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[7] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[6] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[5] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[4] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[3] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[2] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[1] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin vc:vol[0] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:34]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[15] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[14] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[13] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[12] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[11] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[10] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[9] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[8] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[7] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[6] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[5] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[4] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[3] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[2] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[1] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:vol[0] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:current[2] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:current[1] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin Mp3:current[0] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:41]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[15] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[14] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[13] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[12] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[11] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[10] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[9] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[8] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[7] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[6] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[5] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[4] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[3] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[2] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[1] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+WARNING: [Synth 8-3295] tying undriven pin d7:DATA[0] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 343.344 ; gain = 136.625
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_1' instantiated as 'Mp3/flower_dance' [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:43]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-23504-LAPTOP-524UIDDT/dcp/blk_mem_gen_1_in_context.xdc] for cell 'Mp3/flower_dance'
+Finished Parsing XDC File [D:/users/bigHW/bigHW.runs/synth_1/.Xil/Vivado-23504-LAPTOP-524UIDDT/dcp/blk_mem_gen_1_in_context.xdc] for cell 'Mp3/flower_dance'
+Parsing XDC File [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]
+Finished Parsing XDC File [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bigHW_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bigHW_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 642.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'RSET_reg' into 'MP3_RST_reg' [D:/users/bigHW/bigHW.srcs/sources_1/new/mp3.v:60]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mp3'
+INFO: [Synth 8-5545] ROM "MP3_RST" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "XCS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "XDCS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "delay_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SI" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SI" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "SCLK" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "delay_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   DELAY |                              000 |                              100
+                 CMD_PRE |                              001 |                              000
+                DATA_PRE |                              010 |                              010
+                 VOL_PRE |                              011 |                              101
+              VOL_CHANGE |                              100 |                              110
+              WRITE_DATA |                              101 |                              011
+               WRITE_CMD |                              110 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mp3'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   7 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 2     
+	  17 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  13 Input      7 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vol_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 1     
+Module Divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module mp3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   7 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 15    
+Module Divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module display7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  13 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "Mp3/delay_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mp3/MP3_RST" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mp3/XCS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mp3/XDCS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mp3/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mp3/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mp3/SI" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Mp3/SI" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design bigHW has unconnected port RSET
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 642.809 ; gain = 436.090
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'Mp3/pre_reg[0]' (FD) to 'Mp3/pre_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Mp3/pre_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/pre_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\d7/_DATA_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\d7/_DATA_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\d7/_DATA_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\d7/_DATA_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\d7/_DATA_reg[23] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\d7/_DATA_reg[22] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\d7/_DATA_reg[19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\d7/_DATA_reg[18] )
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[15]' (FD) to 'd7/_DATA_reg[14]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[14]' (FD) to 'd7/_DATA_reg[13]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[13]' (FD) to 'd7/_DATA_reg[12]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[12]' (FD) to 'd7/_DATA_reg[11]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[11]' (FD) to 'd7/_DATA_reg[10]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[10]' (FD) to 'd7/_DATA_reg[9]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[9]' (FD) to 'd7/_DATA_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d7/_DATA_reg[7] )
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[6]' (FD) to 'd7/_DATA_reg[5]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[5]' (FD) to 'd7/_DATA_reg[4]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[4]' (FD) to 'd7/_DATA_reg[3]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[3]' (FD) to 'd7/_DATA_reg[2]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[2]' (FD) to 'd7/_DATA_reg[1]'
+INFO: [Synth 8-3886] merging instance 'd7/_DATA_reg[1]' (FD) to 'd7/_DATA_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d7/_DATA_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d7/cnt0_inferred /\d7/cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d7/cnt0_inferred /\d7/cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/_Data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_vol_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mp3/cmd_reg[2] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (Mp3/pre_reg[2]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/pre_reg[1]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/pre_reg[0]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[31]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[30]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[29]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[28]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[27]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[26]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[25]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[24]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[23]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[22]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[21]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[20]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[19]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[18]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[17]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[16]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[15]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[14]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[13]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[12]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[11]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[10]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[9]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[8]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[7]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[6]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[5]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[4]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[3]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[2]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[1]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/delay_cnt_reg[0]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/SCLK_reg) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[63]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[62]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[61]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[60]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[59]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[58]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[57]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[56]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[55]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[54]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[53]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[52]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[51]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[50]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[49]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[48]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[47]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[46]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[45]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[44]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[43]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[42]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[41]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[40]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[39]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[38]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[37]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[36]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[35]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[34]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[33]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[32]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[31]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[30]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[29]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[28]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[27]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[26]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[25]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[24]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[23]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[22]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[21]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[20]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[19]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[18]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[17]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[16]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[15]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[14]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[13]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[12]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[11]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[10]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[9]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[8]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[7]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[6]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[5]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[4]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[3]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[2]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[1]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (Mp3/cmd_reg[0]) is unused and will be removed from module bigHW.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 642.809 ; gain = 436.090
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'd7/SEG_reg[0]' (FD) to 'd7/SEG_reg[3]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 642.809 ; gain = 436.090
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Mp3/flower_dance  has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_1 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_1 |     1|
+|2     |BUFG          |     1|
+|3     |CARRY4        |    38|
+|4     |LUT1          |   128|
+|5     |LUT2          |     9|
+|6     |LUT3          |    21|
+|7     |FDRE          |    87|
+|8     |IBUF          |     1|
+|9     |OBUF          |    20|
+|10    |OBUFT         |     1|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-----------+------------------------+------+
+|      |Instance   |Module                  |Cells |
++------+-----------+------------------------+------+
+|1     |top        |                        |   338|
+|2     |  Mp3      |mp3                     |   162|
+|3     |    CLKDIV |Divider                 |   127|
+|4     |  d7       |display7                |   153|
+|5     |    CLKDIV |Divider__parameterized0 |   127|
++------+-----------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 642.809 ; gain = 436.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 32 critical warnings and 234 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 642.809 ; gain = 108.551
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 642.809 ; gain = 436.090
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+168 Infos, 164 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 642.809 ; gain = 411.719
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 642.809 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 01 19:34:26 2022...

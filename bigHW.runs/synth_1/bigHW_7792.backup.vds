@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Jan 08 10:52:51 2022
+# Process ID: 7792
+# Current directory: D:/users/bigHW/bigHW.runs/synth_1
+# Command line: vivado.exe -log bigHW.vds -mode batch -messageDb vivado.pb -notrace -source bigHW.tcl
+# Log file: D:/users/bigHW/bigHW.runs/synth_1/bigHW.vds
+# Journal file: D:/users/bigHW/bigHW.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source bigHW.tcl -notrace
+Command: synth_design -top bigHW -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14772 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 306.078 ; gain = 99.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bigHW' [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:4]
+INFO: [Synth 8-638] synthesizing module 'display7' [D:/users/bigHW/bigHW.srcs/sources_1/new/dislplay7.v:4]
+INFO: [Synth 8-638] synthesizing module 'Divider' [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+	Parameter N bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider' (1#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/Divider.v:23]
+INFO: [Synth 8-256] done synthesizing module 'display7' (2#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/dislplay7.v:4]
+WARNING: [Synth 8-3848] Net out_bluetooth in module/entity bigHW does not have driver. [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:31]
+INFO: [Synth 8-256] done synthesizing module 'bigHW' (3#1) [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:4]
+WARNING: [Synth 8-3331] design bigHW has unconnected port out_bluetooth[7]
+WARNING: [Synth 8-3331] design bigHW has unconnected port out_bluetooth[6]
+WARNING: [Synth 8-3331] design bigHW has unconnected port out_bluetooth[5]
+WARNING: [Synth 8-3331] design bigHW has unconnected port out_bluetooth[4]
+WARNING: [Synth 8-3331] design bigHW has unconnected port RST_n
+WARNING: [Synth 8-3331] design bigHW has unconnected port get_bluetooth
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 343.484 ; gain = 136.691
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin dp7:iData[3] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:74]
+WARNING: [Synth 8-3295] tying undriven pin dp7:iData[2] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:74]
+WARNING: [Synth 8-3295] tying undriven pin dp7:iData[1] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:74]
+WARNING: [Synth 8-3295] tying undriven pin dp7:iData[0] to constant 0 [D:/users/bigHW/bigHW.srcs/sources_1/new/bigHW.v:74]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 343.484 ; gain = 136.691
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]
+Finished Parsing XDC File [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/users/bigHW/bigHW.srcs/constrs_1/new/bigHW.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bigHW_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bigHW_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 634.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "O_CLK_1M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	  10 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module display7 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	  10 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design bigHW has unconnected port out_bluetooth[7]
+WARNING: [Synth 8-3331] design bigHW has unconnected port out_bluetooth[6]
+WARNING: [Synth 8-3331] design bigHW has unconnected port out_bluetooth[5]
+WARNING: [Synth 8-3331] design bigHW has unconnected port out_bluetooth[4]
+WARNING: [Synth 8-3331] design bigHW has unconnected port RST_n
+WARNING: [Synth 8-3331] design bigHW has unconnected port get_bluetooth
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 634.566 ; gain = 427.773
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'dp7/oData_reg[0]' (FDRE) to 'dp7/oData_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dp7/oData_reg[1]' (FDRE) to 'dp7/oData_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dp7/oData_reg[2]' (FDRE) to 'dp7/oData_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dp7/oData_reg[3]' (FDRE) to 'dp7/oData_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dp7/oData_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dp7/oData_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dp7/oData_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (dp7/oData_reg[6]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (dp7/oData_reg[5]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (dp7/oData_reg[4]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (dp7/oData_reg[3]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (dp7/oData_reg[2]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (dp7/oData_reg[1]) is unused and will be removed from module bigHW.
+WARNING: [Synth 8-3332] Sequential element (dp7/oData_reg[0]) is unused and will be removed from module bigHW.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 634.566 ; gain = 427.773
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 634.566 ; gain = 427.773
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUF  |    11|
+|2     |OBUFT |     4|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    15|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.566 ; gain = 427.773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 634.566 ; gain = 107.391
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 634.566 ; gain = 427.773
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 634.566 ; gain = 403.574
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 634.566 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 08 10:53:16 2022...

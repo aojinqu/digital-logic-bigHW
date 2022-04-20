@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv"
+sv xil_defaultlib  "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv"
+sv xil_defaultlib  "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv"
+sv xil_defaultlib  "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv"
+sv xil_defaultlib  "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv"
+sv xil_defaultlib  "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv"
+sv xil_defaultlib  "D:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv"
+verilog blk_mem_gen_v8_3_3  "../../../bigHW.ip_user_files/ipstatic/blk_mem_gen_v8_3_3/simulation/blk_mem_gen_v8_3.v"
+verilog xil_defaultlib  "../../../bigHW.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v"
+verilog xil_defaultlib  "../../../bigHW.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v"
+verilog xil_defaultlib  "../../../bigHW.srcs/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v"
+verilog xil_defaultlib  "../../../bigHW.srcs/sources_1/new/divider.v"
+verilog xil_defaultlib  "../../../bigHW.srcs/sources_1/new/dislplay7.v"
+verilog xil_defaultlib  "../../../bigHW.srcs/sources_1/new/bigHW.v"
+verilog xil_defaultlib  "../../../bigHW.srcs/sources_1/new/bluetooth.v"
+verilog xil_defaultlib  "../../../bigHW.srcs/sources_1/new/mp3.v"
+verilog xil_defaultlib  "../../../bigHW.srcs/sources_1/new/vga_control.v"
+verilog xil_defaultlib  "../../../bigHW.srcs/sim_1/new/bigHW_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
